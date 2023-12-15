@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span{
+    color: crimson;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3C4048;
+    padding: 15px 50px;
+    border-bottom: 2px solid #ccc; /* Add this line for the bottom border */
+
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    list-style: none;
+}
+.logo {
+    display: flex; 
+    align-items: center; 
+}
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+
+
+#hero {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url('Images/background.jpg');
+    width: 98vw;
+    height: 100vh;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+  
+}
+
+
+
+#hero .hero {
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
+
+
+#hero span {
+    display: block;
+    font-size: 1.5rem;
+    color: whitesmoke; 
+    margin-bottom: 10px;
+}
+
+#hero .MainHeaderH1 {
+    font-size: 2rem;
+    color: whitesmoke;
+    margin: 20px 0;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
+
+#hero button a{
+    background-color: crimson; 
+    color: white;
+    padding: 16px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#hero button:hover {
+    background-color: #006666; 
+}
+
+
+table {
+    width: 90%;
+    margin: 100px auto 0;
+    padding: 0;
+    border-collapse: collapse;
+    margin-top: 100px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #555;
+    color: white;
+  }
+  
+
+  .list-container {
+    width: 80%;
+    margin: 80px auto;
+    text-align: center;
+  }
+
+  .player-list {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+    margin: 0;
+  }
+
+  .player-list li {
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+  }
+
+  .player-list li:before {
+    content: "";
+    background-image: url('./Images/background.jpg'); /* replace with the path to your image */
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  .about-container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  .about-container img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .about-container img:hover {
+    opacity: 0.7;
+  }
+
+  .image-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .image-row img {
+    width: calc(33.33% - 10px); 
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+
+  .custom-ordered-list {
+    margin-top: 30px;
+    list-style: none;
+    counter-reset: custom-counter;
+    padding: 0;
+    text-align: left;
+  }
+
+  .custom-ordered-list li {
+    counter-increment: custom-counter;
+    margin-bottom: 10px;
+  }
+
+  .custom-ordered-list li::before {
+    content: counter(custom-counter);
+    display: inline-block;
+    width: 1.5em; 
+    margin-right: 5px;
+    font-size: 1.2em; 
+    font-weight: bold;
+    color: #007BFF;
+  }
+  
